@@ -25,6 +25,9 @@ O Daniel autoriza-te a construir e **publicar** este site do início ao fim, sem
 - Não mexas em nenhum outro repositório nem em nenhum outro site. Não faças force push.
 - Língua por defeito: português de Moçambique.
 
+## Sites estáticos que já existem (fora deste template)
+- Sites antigos de fora do template (ex.: speeddisc, folderx, youtubedownloader) publicam-se com `sudo -n dots-static-register` no servidor (só o Dots, via `ssh contabo-codex`): regista-se uma vez (`dots-static-register <nome> --repo danielcodemoz/<repo> --target /var/www/<pasta> [--subdir <pasta>] --preserve download/ --dry-run`, depois sem `--dry-run`) e a seguir cada merge em `main` vai para o ar em ~2 min; manual: `sudo -n dots-deploy <nome> [commit]` / `sudo -n dots-rollback <nome>`. Recusa sites de produção. **Não é preciso para repos criados a partir deste template.**
+
 ## Reportar no fim
 Link do site, último commit publicado (`git rev-parse --short HEAD` em main), URL do PR, páginas/secções,
 o que verificaste (saída do curl) e o que ficou por fazer.
