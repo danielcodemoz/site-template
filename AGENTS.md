@@ -17,8 +17,11 @@ O Daniel autoriza-te a construir e **publicar** este site do início ao fim, sem
 5. Verifica: `curl -sI https://<nome>.danielpro.dev` e `curl -s https://<nome>.danielpro.dev | head`.
    Se ainda mostrar "em breve" ou não resolver, espera 2 minutos e volta a verificar (até ~10 minutos).
 
+## Estado do site
+- `https://danielpro.dev/__site-status/<nome>.json` e `https://danielpro.dev/__site-status/_repos.json` (ver `GUIA-NOVO-SITE.md`).
+
 ## Regras
-- O repo tem de continuar **público** (o servidor só lê repos públicos).
+- O repo pode ser **público ou privado**. Nos privados, o servidor adiciona uma deploy key só de leitura; não a apagues.
 - Não ponhas no git: `.exe`, `.zip`, `.msi`, `.apk`, vídeos, ficheiros grandes, `.env`, chaves, palavras-passe ou tokens.
 - Downloads grandes: links para ficheiros públicos (ex.: assets de uma GitHub Release de um repo público). Não tens acesso ao servidor.
 - Links relativos ou absolutos ao próprio site; sem links partidos; funciona no telemóvel e no computador.
